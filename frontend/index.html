@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutorAI+ | Your Intelligent Learning Companion</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🧠</span>
+                    <h1>TutorAI+</h1>
+                </div>
+                <div class="header-info">
+                    <span class="status-indicator active"></span>
+                    <span class="status-text">AI Ready</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Mode Bar -->
+        <nav class="mode-bar">
+            <button class="mode-btn" data-mode="auto">
+                <span class="mode-icon">✨</span>
+                <span class="mode-label">Auto</span>
+            </button>
+            <button class="mode-btn" data-mode="tutor">
+                <span class="mode-icon">📚</span>
+                <span class="mode-label">Tutor</span>
+            </button>
+            <button class="mode-btn" data-mode="code">
+                <span class="mode-icon">💻</span>
+                <span class="mode-label">Code</span>
+            </button>
+            <button class="mode-btn" data-mode="advisor">
+                <span class="mode-icon">💡</span>
+                <span class="mode-label">Advisor</span>
+            </button>
+            <button class="mode-btn" data-mode="summarizer">
+                <span class="mode-icon">📺</span>
+                <span class="mode-label">Summarize</span>
+            </button>
+            <button class="mode-btn" data-mode="image">
+                <span class="mode-icon">🎨</span>
+                <span class="mode-label">Image</span>
+            </button>
+            <button class="mode-btn" data-mode="quiz">
+                <span class="mode-icon">📝</span>
+                <span class="mode-label">Quiz</span>
+            </button>
+            <button class="mode-btn new-chat" id="newChatBtn">
+                <span class="mode-icon">🔄</span>
+                <span class="mode-label">New Chat</span>
+            </button>
+        </nav>
+
+        <!-- Chat Area -->
+        <main class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <div class="welcome-message">
+                    <h2>👋 Welcome to TutorAI+</h2>
+                    <p>Your intelligent learning companion powered by AI</p>
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <span class="feature-icon">📚</span>
+                            <h3>Learn Anything</h3>
+                            <p>Get personalized explanations on any topic</p>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">💻</span>
+                            <h3>Code Assistant</h3>
+                            <p>Generate and understand code easily</p>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">🎯</span>
+                            <h3>Smart Quizzes</h3>
+                            <p>Test your knowledge with AI quizzes</p>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">📺</span>
+                            <h3>Video Summaries</h3>
+                            <p>Summarize YouTube videos instantly</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Input Bar -->
+        <div class="input-bar">
+            <button class="voice-btn" id="voiceBtn" title="Voice Input">
+                <span class="voice-icon">🎤</span>
+            </button>
+            
+            <div class="input-wrapper">
+                <textarea 
+                    id="messageInput" 
+                    class="message-input" 
+                    placeholder="Ask me anything... (Press Enter to send, Shift+Enter for new line)"
+                    rows="1"
+                ></textarea>
+            </div>
+            
+            <button class="send-btn" id="sendBtn" title="Send Message">
+                <span class="send-icon">📤</span>
+            </button>
+            
+            <button class="stop-btn" id="stopBtn" title="Stop Generating" style="display: none;">
+                <span class="stop-icon">⏹</span>
+                <span class="stop-text">Stop</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="/assets/script.js"></script>
+</body>
+</html>
