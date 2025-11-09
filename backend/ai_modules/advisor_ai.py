@@ -8,7 +8,7 @@ async def detect_emotion_and_intent(message: str) -> dict:
     prompt = f"""Analyze this message and return a JSON object with:
     1. emotion: the user's emotional state (happy, sad, frustrated, confused, anxious, neutral, excited)
     2. intent: what the user wants (learn, help, advice, quiz, code, summarize, clarify)
-    3. empathy_line: a short empathetic response (1 sentence)
+    3. empathy_line: a very empathetic response (1 sentence)
     
     Message: "{message}"
     
